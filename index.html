@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="area">
+
+  </div>
+
+  <table>  
+    <tr>
+      <td onclick="deleteAll()" id="alll">AC</td>  
+      <td></td>
+      <td  onclick="appendOperation(' % ')" class="MathSymbols">%</td>
+      <td onclick="deleteOne()">DEL</td>
+    </tr>
+
+    <tr> 
+      <td onclick="appendOperation(7)" >7</td> 
+      <td onclick="appendOperation(8)">8</td> 
+      <td onclick="appendOperation(9)">9</td> 
+      <td onclick="appendOperation(' / ')" class="MathSymbols">/</td>
+    </tr> 
+    <tr> 
+      <td onclick="appendOperation(4)">4</td> 
+      <td onclick="appendOperation(5)">5</td> 
+      <td onclick="appendOperation(6)">6</td> 
+      <td onclick="appendOperation(' * ')" class="MathSymbols">x</td>
+    </tr> 
+    <tr> 
+      <td onclick="appendOperation(1)">1</td> 
+      <td onclick="appendOperation(2)">2</td> 
+      <td onclick="appendOperation(3)">3</td> 
+      <td onclick="appendOperation(' + ')" class="MathSymbols">+</td>
+    </tr> 
+    <tr> 
+      <td onclick="appendOperation(0)">0</td> 
+      <td onclick="appendOperation('.')">,</td> 
+      <td onclick="calculateResult()" id="result">=</td> 
+      <td onclick="appendOperation(' - ')" class="MathSymbols">-</td>
+    </tr>
+  </table> 
+
+  <script src="main.js"></script>
+</body>
+</html>
